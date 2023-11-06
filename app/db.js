@@ -19,18 +19,18 @@ const books = [
 const getAllBooks = () => books;
 
 //Adding new book
-const addBook = ({ title, isbn }) => {
-  const id = uuidv4();
-  if (isValidISBN(isbn)) {
-    const book = {
-      id,
-      title,
-      isbn,
-    };
-    books.push(book);
-    return book;
-  } else console.log("Invalid ");
-};
+// const addBook = ({ title, isbn }) => {
+//   const id = uuidv4();
+//   if (isValidISBN(isbn)) {
+//     const book = {
+//       id,
+//       title,
+//       isbn,
+//     };
+//     books.push(book);
+//     return book;
+//   } else console.log("Invalid ");
+// };
 
 //add rating for the book
 const addRating = ({ rating, bookId }) => {
