@@ -33,18 +33,18 @@ const addBook = ({ title, isbn }) => {
 };
 
 //add rating for the book
-// const addRating = ({ rating, bookId }) => {
-//   const rateId = uuidv4();
-//   const ratingIdx = ratings.findIndex((r) => r.bookId == id);
-//   if (ratingIdx != -1) return null;
-//   const bookRating = {
-//     rateId,
-//     rating,
-//     bookId,
-//   };
-//   ratings.push(bookRating);
-//   return bookRating;
-// };
+const addRating = ({ rating, bookId }) => {
+  const rateId = uuidv4();
+  const ratingIdx = ratings.findIndex((r) => r.bookId == id);
+  if (ratingIdx != -1) return null;
+  const bookRating = {
+    rateId,
+    rating,
+    bookId,
+  };
+  ratings.push(bookRating);
+  return bookRating;
+};
 
 //get a single book with rating
 const getBook = ({ id }) => {
