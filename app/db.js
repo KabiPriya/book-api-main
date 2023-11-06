@@ -2,12 +2,12 @@ const { v4: uuidv4 } = require("uuid");
 const isValidISBN = require("./validation");
 
 const ratings = [];
-const books = [
-  {
-    id: 1234,
-    title: "Storywallah",
-    isbn: "0143445774",
-  },
+// const books = [
+//   {
+//     id: 1234,
+//     title: "Storywallah",
+//     isbn: "0143445774",
+//   },
   {
     id: 5678,
     title: "The Gold Crew",
