@@ -24,9 +24,9 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 //READ
-// app.get("/books", (req, res) => {
-//   res.send(getAllBooks());
-// });
+app.get("/books", (req, res) => {
+  res.send(getAllBooks());
+});
 
 //CREATE
 app.post("/books", (req, res, next) => {
