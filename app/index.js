@@ -3,7 +3,7 @@ dotenv.config();
 
 const config = require("./config");
 const express = require("express");
-// const morgan = require("morgan");
+const morgan = require("morgan");
 
 const Joi = require("joi");
 const {
