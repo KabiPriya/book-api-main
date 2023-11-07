@@ -5,18 +5,18 @@ const config = require("./config");
 const express = require("express");
 const morgan = require("morgan");
 
-const Joi = require("joi");
-const {
-  getAllBooks,
-  addBook,
-  addRating,
-  getBook,
-  updateBookTitle,
-  deleteBook,
-  updateRating,
-  deleteRating,
-  getRating,
-} = require("./db");
+// const Joi = require("joi");
+// const {
+//   getAllBooks,
+//   addBook,
+//   addRating,
+//   getBook,
+//   updateBookTitle,
+//   deleteBook,
+//   updateRating,
+//   deleteRating,
+//   getRating,
+// } = require("./db");
 
 const app = express();
 
