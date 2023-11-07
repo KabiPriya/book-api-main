@@ -29,16 +29,16 @@ app.get("/books", (req, res) => {
 });
 
 //CREATE
-app.post("/books", (req, res, next) => {
-  if (!req.body.title || !req.body.isbn) {
-    return next({ code: 400, message: "book should have title and isbn" });
-  }
-  const book = addBook({
-    title: req.body.title,
-    isbn: req.body.isbn,
-  });
-  return res.json(book);
-});
+// app.post("/books", (req, res, next) => {
+//   if (!req.body.title || !req.body.isbn) {
+//     return next({ code: 400, message: "book should have title and isbn" });
+//   }
+//   const book = addBook({
+//     title: req.body.title,
+//     isbn: req.body.isbn,
+//   });
+//   return res.json(book);
+// });
 
 //CREATE rating
 app.post("/books/:id/rating", (req, res) => {
